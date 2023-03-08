@@ -1,16 +1,11 @@
 {
-    "manifest_version": 2,
-    "name": "Test Form Filler",
+    "manifest_version": 3,
+    "name": "Form Filler",
     "description": "Populate fields and call an api",
-    "homepage_url": "http://www.lethcode.com",
+    "homepage_url": "https://www.lgnat.com",
     "version": "1.0",
-    "browser_action": {
+    "action": {
         "default_title": "Click here to load form data!",
         "default_popup": "index.html"
-    },
-    "permissions": [
-        "tabs",
-        "http://*/*",
-        "https://*/*"
-    ]
+    }
 }
