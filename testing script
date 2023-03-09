@@ -1,0 +1,5 @@
+document.body.style.backgroundColor='green';
+setTimeout(function() {
+    // code to be executed after 1 second
+  }, 1000); // 1000 milliseconds = 1 second
+document.querySelector('input[name="reemailaddr"]').value = 'abcd';
