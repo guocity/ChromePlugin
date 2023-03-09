@@ -1,11 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "Form Filler",
-    "description": "Populate fields and call an api",
-    "homepage_url": "https://www.lgnat.com",
+    "name": "My Extension",
     "version": "1.0",
+    "description": "Description of my extension",
+    "permissions": [
+      "scripting",
+      "activeTab",
+      "tabs"
+    ],
     "action": {
-        "default_title": "Click here to load form data!",
-        "default_popup": "index.html"
-    }
-}
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["contentScript.js"]
+        }
+      ]
+  }
+  

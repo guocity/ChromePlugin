@@ -1,6 +1,31 @@
 //when i click on my button
+
+function printTags() {
+    // Get all HTML form elements on the page
+    const forms = document.querySelectorAll("form");
+
+    // Loop through the forms and get all HTML tags
+    let tags = "";
+    forms.forEach((form) => {
+      const formTags = form.outerHTML;
+      tags += formTags;
+    });
+
+    // Create a new element to display the HTML tags
+    const div = document.createElement("div");
+    div.innerHTML = tags;
+
+    // Add the new element to the page
+    document.body.appendChild(div);
+  }
+
 document.getElementById('fillForm').addEventListener('click', function(){
     //grab the text filed value from my tool
+
+    printTags();
+
+      // Run the printTags function when the page has loaded
+    //   window.addEventListener("load", printTags);
 
 
     var formRead = document.getElementsByTagName("form");
